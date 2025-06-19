@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <rect width="512" height="512" rx="128" fill="url(#paint0_linear)"/>
+  
+  <!-- Note paper with folded corner -->
+  <path d="M128 128C128 114.745 138.745 104 152 104H309.255C315.935 104 322.314 106.843 326.828 111.899L376.101 167.172C380.843 172.429 384 179.339 384 186.627V384C384 397.255 373.255 408 360 408H152C138.745 408 128 397.255 128 384V128Z" fill="white"/>
+  
+  <!-- Folded corner detail -->
+  <path d="M312 104L384 178.266V184L316 184C310.477 184 306 179.523 306 174V104H312Z" fill="#E6E6E6"/>
+  
+  <!-- Note lines -->
+  <line x1="160" y1="184" x2="352" y2="184" stroke="#7C3AED" stroke-width="4"/>
+  <line x1="160" y1="224" x2="352" y2="224" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="160" y1="264" x2="352" y2="264" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="160" y1="304" x2="352" y2="304" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="160" y1="344" x2="280" y2="344" stroke="#9CA3AF" stroke-width="2"/>
+  
+  <!-- Pencil icon -->
+  <path d="M352 320L384 352L368 368L336 336L352 320Z" fill="#7C3AED"/>
+  <path d="M336 336L304 368H288V352L320 320L336 336Z" fill="#9F7AFA"/>
+  <path d="M288 368H304L288 352V368Z" fill="#DDD6FE"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+</svg>

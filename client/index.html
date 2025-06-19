@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotesMaster - Dark Theme Note-Taking App</title>
+  <meta name="description" content="A modern, feature-rich notes taking web application with voice dictation and offline support">
+  <meta name="theme-color" content="#7c3aed">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Base colors */
+      --background: 0 0% 7%;
+      --foreground: 0 0% 98%;
+      --card: 240 10% 15%;
+      --card-foreground: 0 0% 98%;
+      --popover: 240 10% 15%;
+      --popover-foreground: 0 0% 98%;
+      --primary: 263 90% 64%;
+      --primary-foreground: 0 0% 100%;
+      --secondary: 222 47% 58%;
+      --secondary-foreground: 0 0% 100%;
+      --muted: 240 5% 25%;
+      --muted-foreground: 240 5% 65%;
+      --accent: 168 71% 40%;
+      --accent-foreground: 0 0% 100%;
+      --destructive: 0 63% 58%;
+      --destructive-foreground: 0 0% 100%;
+      --border: 240 4% 20%;
+      --input: 240 4% 22%;
+      --ring: 263 90% 64%;
+      --radius: 0.5rem;
+      
+      /* Chart colors */
+      --chart-1: 263 90% 64%;
+      --chart-2: 222 47% 58%;
+      --chart-3: 168 71% 40%;
+      --chart-4: 330 65% 55%;
+      --chart-5: 33 93% 54%;
+      
+      /* Sidebar colors */
+      --sidebar-background: 240 10% 15%;
+      --sidebar-foreground: 0 0% 98%;
+      --sidebar-primary: 263 90% 64%;
+      --sidebar-primary-foreground: 0 0% 100%;
+      --sidebar-accent: 0 0% 20%;
+      --sidebar-accent-foreground: 0 0% 98%;
+      --sidebar-border: 240 4% 20%;
+      --sidebar-ring: 263 90% 64%;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #121212, #1E1E1E);
+      min-height: 100vh;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #262626;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #4B5563;
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #6B7280;
+    }
+    
+    .note-card {
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .note-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
